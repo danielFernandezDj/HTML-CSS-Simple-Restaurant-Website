@@ -1,0 +1,199 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(245, 245, 247, 1);
+    text-align: center;
+}
+
+h1,
+h2 {
+    color: #3a246e;
+    margin-top: 10%;
+}
+
+h3,
+p,
+li {
+    color: rgb(242, 242, 242);
+}
+
+
+main {
+    margin: 0 20%;
+}
+
+/* ©©©©©©©©©©©©©©©©©© NOTICE START HERE ©©©©©©©©©©©©©©©©©© */
+#notice-informational {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    letter-spacing: 2px;
+}
+
+@media screen and (max-width: 490px) {
+    #notice-informational {
+        letter-spacing: 0px;
+    }
+}
+
+#notice-informational p {
+    color: rgb(31, 31, 31);
+}
+
+.span-notice {
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(239, 65, 38);
+}
+
+#span-notice-paragraph {
+    font-weight: bolder;
+    font-style: italic;
+    color: #3a246e;
+}
+
+/* ©©©©©©©©©©©©©©©©©© NAV-VAR START HERE ©©©©©©©©©©©©©©©©©© */
+.section-nav-var {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #83916d;
+}
+
+nav {
+    margin-bottom: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+nav li {
+    display: inline;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 1.6em;
+    color: white;
+    border-color: #83916d;
+    /* border-radius: 6px; */
+    margin-right: 25px;
+    transition-duration: 0.5s;
+}
+
+nav a:hover {
+    color: #3a246e;
+    border-bottom: 1.5px solid #3a246e;
+    border-color: #3a246e;
+    padding: 0 10px;
+}
+
+
+/* ©©©©©©©©©©©©©©©©©© BODY START HERE ©©©©©©©©©©©©©©©©©© */
+#image-banner {
+    width: 100%;
+    height: auto;
+    margin-top: 10%;
+}
+
+#image-banner img {
+    width: 60%;
+    height: auto;
+}
+
+#format-meal-times {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+#format-meal-times h3 {
+    width: 200px;
+    height: auto;
+    background: #83916d;
+    padding: 40px 40px;
+    border-radius: 6px;
+}
+
+.come-out-meal {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    background: #83916d;
+    border-radius: 6px;
+}
+
+.come-out-meal h2 {
+    padding: -50% 5%;
+}
+
+.come-out-meal img {
+    width: 100%;
+    height: auto;
+    border-radius: 0px 0px 6px 6px;
+}
+
+.service {
+    display: inline-block;
+    background-color: white;
+    border: 5px solid #83916d;
+    border-radius: 5px;
+    color: #3a246e;
+    font-size: 2em;
+    padding: 20px;
+    margin: 10px;
+}
+
+.our-menu-text {
+    display: flex;
+    justify-content: center;
+}
+
+table {
+    border: 3px solid #3a246e;
+    border-style: double;
+    border-radius: 8px;
+    color: #3a246e;
+    width: 100%;
+    padding: 3px;
+}
+
+td,
+th {
+    border: 1px solid #3a246e;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.table-icons {
+    width: 20px;
+    height: auto;
+    transform: translateY(2.8px);
+    /* manualy align */
+}
+
+
+/* ©©©©©©©©©©©©©©©©©© FOOTER START HERE ©©©©©©©©©©©©©©©©©© */
+footer {
+    background-color: #83916d;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 20px;
+    margin-top: 10%;
+}
+
+footer span {
+    color: #3a246e;
+    font-weight: bolder;
+}
