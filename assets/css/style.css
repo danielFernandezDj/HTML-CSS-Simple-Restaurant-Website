@@ -214,15 +214,9 @@ th {
     display: flex;
     justify-content: center;
     margin: auto;
-    max-width: 50%;
-    height: auto;
 }
 
-@media screen and (max-width: 490px) {
-    #table-about-locations {
-        max-width: none;
-    }
-}
+
 
 #origin-story-container {
     display: flex;
