@@ -6,20 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <!-- Remember to link to your CSS file! -->
-    <link rel="stylesheet" href="/assets/css/style.css" type="text/css">
+    <link rel="stylesheet" href="/unlv-jobs/HTML-CSS-Simple-Restaurant-Website/assets/css/style.css" type="text/css">
 </head>
 
 <body>
-    <!-- ABOUT PAGE -->
+    <!-- HOME PAGE or Notice -->
+    <div id="notice-informational">
+        <p> <span class="span-notice">Notice</span> &spar; Our restaurant will be closed on <span
+                id="span-notice-paragraph"> Holidays. </span></p>
+    </div>
 
     <!-- TODO: Navbar here -->
     <section class="section-nav-var">
         <nav>
             <ul>
-                <li><a href="/index.html"> Home </a></li>
-                <li><a href="/menu.html"> Menu </a></li>
-                <li><a href="/about.html"> About </a></li>
-                <li><a href="/contact.html"> Contact </a></li>
+                <li><a href="/unlv-jobs/HTML-CSS-Simple-Restaurant-Website/index.html"> Home </a></li>
+                <li><a href="/unlv-jobs/HTML-CSS-Simple-Restaurant-Website/menu.html"> Menu </a></li>
+                <li><a href="/unlv-jobs/HTML-CSS-Simple-Restaurant-Website/about.html"> About </a></li>
+                <li><a href="/unlv-jobs/HTML-CSS-Simple-Restaurant-Website/contact.html"> Contact </a></li>
             </ul>
         </nav>
     </section>
@@ -31,17 +35,75 @@
 
     <main>
         <!-- About page code here -->
-        <section class="our-menu-text">
-            <h1>✎</h1>
-            <h1>About Us</h1>
-        </section>
-
         <section>
-            <div>
-                <h2>Our Locations</h2>
+            <div class="our-menu-text">
+                <h1>✎</h1>
+                <h1>About Us</h1>
+            </div>
+            <div id="our-menu-text-paragraph">
+                <p>
+                    Welcome to H-Thai-ML, where culinary excellence meets authentic flavors from Thailand.
+    
+                    At H-Thai-ML, we take pride in delivering an unforgettable dining experience, combining traditional
+                    Thai recipes with modern flair. Our chefs meticulously craft each dish with the freshest
+                    ingredients, ensuring a burst of flavors in every bite.
+    
+                    From our signature Pad Thai noodles to our savory Tom Yum soup, each dish is a celebration of
+                    Thailand's rich culinary heritage. Whether you're craving the bold spices of our curries or the
+                    delicate balance of our stir-fried dishes, our menu offers something for every palate.
+    
+                    Beyond our delectable cuisine, H-Thai-ML provides a warm and inviting atmosphere, perfect for
+                    intimate dinners, family gatherings, or casual lunches with friends. Our attentive staff is
+                    dedicated to ensuring your dining experience is nothing short of exceptional.
+    
+                    Join us at H-Thai-ML and embark on a culinary journey through the vibrant flavors of Thailand.
+                    Experience the essence of Thai cuisine right here in [Location], where every dish tells a story of
+                    tradition, passion, and culinary mastery.
+                </p>
+            </div>
+
+            <h2>Our Locations</h2>
+
+            <div id="table-about-locations">
+                <table>
+                    <tr>
+                        <td>Las Vegas</td>
+                        <td>NV</td>
+                    </tr>
+                    <tr>
+                        <td>Houston</td>
+                        <td>TX</td>
+                    </tr>
+                    <tr>
+                        <td>Tampa</td>
+                        <td>FL</td>
+                    </tr>
+                    <tr>
+                        <td>Miami</td>
+                        <td>FL</td>
+                    </tr>
+                </table>
             </div>
         </section>
+
+        <div id="origin-story-container">
+            <h2>Origin Story</h2>
+            <img src="/unlv-jobs/HTML-CSS-Simple-Restaurant-Website/assets/images/about.jpg" alt="Image">
+            <div id="origin-story-container-div">
+                <p>It all started in Houston, TX when a computer science student tasted a spoonful of curry for
+                    the first
+                    time and discovered a love of spices... Lorem ipsum, dolor sit amet consectetur adipisicing
+                    elit. Id,
+                    culpa labore, odio quaerat, ullam animi cum enim fuga impedit eos consequatur minima blanditiis
+                    necessitatibus corporis ipsum est nesciunt ex quam!</p>
+            </div>
+
+        </div>
     </main>
+
+    <footer>
+        <h4>Made with Love at <span>H-Thai-ML</span> !</h4>
+    </footer>
 </body>
 
 </html>

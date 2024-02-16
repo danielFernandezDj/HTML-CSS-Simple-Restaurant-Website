@@ -81,16 +81,12 @@ nav a {
     text-decoration: none;
     font-size: 1.6em;
     color: white;
-    border-color: #83916d;
-    /* border-radius: 6px; */
     margin-right: 25px;
     transition-duration: 0.5s;
 }
 
 nav a:hover {
     color: #3a246e;
-    border-bottom: 1.5px solid #3a246e;
-    border-color: #3a246e;
     padding: 0 10px;
 }
 
@@ -99,12 +95,20 @@ nav a:hover {
 #image-banner {
     width: 100%;
     height: auto;
-    margin-top: 10%;
+    margin-top: 3%;
 }
 
 #image-banner img {
-    width: 60%;
+    width: 40%;
     height: auto;
+}
+
+/* For smaller screens */
+@media screen and (max-width: 1024px) {
+    #image-banner img {
+        width: 60%;
+        height: auto;
+    }
 }
 
 #format-meal-times {
@@ -159,13 +163,37 @@ nav a:hover {
     justify-content: center;
 }
 
+#our-menu-text-paragraph p {
+    display: flex;
+    justify-content: center;
+    color: #3a246e;
+    font-size: 20px;
+}
+
 table {
+    height: auto;
     border: 3px solid #3a246e;
     border-style: double;
     border-radius: 8px;
     color: #3a246e;
     width: 100%;
     padding: 3px;
+    max-width: 50%;
+    height: auto;
+
+}
+
+#menu-table-container-center table{
+    transform: translateX(50%);
+}
+
+@media screen and (max-width: 490px) {
+    table {
+        max-width: none;
+    }
+    #menu-table-container-center table{
+        transform: translateX(0);
+    }
 }
 
 td,
@@ -175,13 +203,80 @@ th {
     padding: 5px;
 }
 
-.table-icons {
+.menu-table-icons {
     width: 20px;
     height: auto;
     transform: translateY(2.8px);
-    /* manualy align */
+    /* manualy vertical align */
 }
 
+#table-about-locations {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    max-width: 50%;
+    height: auto;
+}
+
+@media screen and (max-width: 490px) {
+    #table-about-locations {
+        max-width: none;
+    }
+}
+
+#origin-story-container {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    background: #83916d;
+    border-radius: 6px;
+    margin-top: 50px;
+}
+
+#origin-story-container h2 {
+    font-size: 36px;
+}
+
+#origin-story-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 0px 0px 6px 6px;
+}
+
+/* The idea is fix the width & height, (no for mobile divices) */
+@media screen and (min-width: 490px) {
+    #origin-story-container h2 {
+        transform: translateY(-20px);
+    }
+
+    #origin-story-container-div {
+        max-width: 80%;
+    }
+}
+
+#origin-story-container-div p {
+    font-size: 22px;
+    color: #3a246e;
+}
+
+#contact-open-days {}
+
+#contact-open-days p {
+    color: #3a246e;
+}
+
+#contact-open-days img {
+    width: 20px;
+    height: auto;
+    transform: translateY(3px);
+}
+
+#contact-open-days-image img {
+    border-radius: 6px;
+}
 
 /* ©©©©©©©©©©©©©©©©©© FOOTER START HERE ©©©©©©©©©©©©©©©©©© */
 footer {
